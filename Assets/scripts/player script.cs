@@ -22,7 +22,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         anim.SetBool("player run", false);
         anim.SetBool("player jump", false);
-        int speed = 5;
+        int speed = 10;
         if (Input.GetKey("a") == true) // move left
         {
             anim.SetBool("player run", true);
@@ -39,7 +39,11 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown("space") == true)
         {
             anim.SetBool("player jump", true);
-            rb.AddForce(new Vector3(0, 10, 0), ForceMode2D.Impulse);
+            rb.AddForce(new Vector3(0, 1, 0), ForceMode2D.Impulse);
+        }
+        if (Input.GetKeyDown("f") == true)
+        {
+            anim.SetTrigger("player attack 1");
         }
     }
 }

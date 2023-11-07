@@ -183,8 +183,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 71
-        y: 78
-        width: 48
+        y: 71
+        width: 46
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,8 +204,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 271
-        y: 77
-        width: 48
+        y: 71
+        width: 44
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 471
-        y: 77
-        width: 48
-        height: 49
+        y: 70
+        width: 44
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,9 +246,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 671
-        y: 77
-        width: 48
-        height: 50
+        y: 76
+        width: 44
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,9 +267,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 871
-        y: 77
-        width: 48
-        height: 50
+        y: 71
+        width: 44
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,9 +288,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1071
-        y: 77
-        width: 48
-        height: 49
+        y: 71
+        width: 44
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,8 +309,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1271
-        y: 77
-        width: 48
+        y: 71
+        width: 44
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,9 +330,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1471
-        y: 77
-        width: 48
-        height: 50
+        y: 76
+        width: 46
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
