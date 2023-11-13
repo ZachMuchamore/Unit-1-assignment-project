@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2ef7951cb5d20a9419a4fe672bae357f
+guid: 895afaa638ef48a4f929697085dbc8c9
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -308,7 +308,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ghost sprites run_0: 2803790001863799327
+      ghost sprites run_1: -6546305231154586831
+      ghost sprites run_2: 2073472960727909627
+      ghost sprites run_3: 4627616039419743228
+      ghost sprites run_4: 3674811060212129459
+      ghost sprites run_5: -7603909696791251444
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
