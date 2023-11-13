@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      841032800_preview_Forest 31 (1.4)_0: 4121000891860303930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

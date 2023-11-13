@@ -1,15 +1,21 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
     Rigidbody2D rb;
-    Transform target;
-    Vector2 moveDirection;
+
+    [SerializeField]
+    Transform player;
+
     public float speed;
-    private float distance;
+
     public Animator anim;
-    public GameObject player;
+
+    [SerializeField]
+    float agroRange;
+
     public GameObject ghostenemy;
     // Start is called before the first frame update
     private void Awake()
@@ -18,35 +24,44 @@ public class EnemyScript : MonoBehaviour
     }
     void Start()
     {
+
         speed = 1f;
         anim = GetComponent<Animator>();
-        target = GameObject.Find("player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance = player.transform.position.x - ghostenemy.transform.position.x;
-        if(target)
+        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        Debug.Log(distToPlayer);
+        if (distToPlayer < agroRange)
         {
-            Vector3 direction = (target.position - transform.position).normalized;
-            moveDirection = direction;
-        }
-        if(target)
-        {
-            rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * speed;
-        }
-        print(distance);
-        if (distance > 0)
-        {
-            transform.transform.localScale = new Vector3(-2f, 2f, 2f);
-            print("flipped");
+            chasePlayer();
         }
         else
         {
-            transform.transform.localScale = new Vector3(2f, 2f, 2f);
-        }
-        Debug.Log("dist=" + distance);
+            StopChasingplayer();
 
+        }
+    }
+
+    void StopChasingplayer()
+    {
+        rb.velocity = new Vector2 (0, 0);
+    }
+
+    void chasePlayer()
+    {
+        if(transform.position.x < player.position.x)
+        {
+            rb.velocity = new Vector2(speed, 0f);
+            transform.localScale = new Vector2(-1, 1);
+
+        }
+        else 
+        {
+            rb.velocity = new Vector2 (-speed, 0f);
+            transform.localScale = new Vector2(1, 1);
+        }
     }
 }

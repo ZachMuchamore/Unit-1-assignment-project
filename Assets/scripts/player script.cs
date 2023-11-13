@@ -25,20 +25,22 @@ public class NewBehaviourScript : MonoBehaviour
         anim.SetBool("player run", false);
         anim.SetBool("player jump", false);
         int speed = 2;
-        if (Input.GetKey("a") == true) // move left
-        {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
-            anim.SetBool("player run", true);
-            print("player pressed left");
-            transform.position = new Vector2(transform.position.x - (speed * Time.deltaTime), transform.position.y);
-        }
-        if (Input.GetKey (KeyCode.LeftShift) == true)
+        if (Input.GetKey(KeyCode.LeftShift) == true)
         {
             print("player is sprinting");
             speed = speed + 2;
         }
+        if (Input.GetKey("a") == true) // move left
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            anim.SetBool("player run", true);
+            print("player pressed left");
+            transform.position = new Vector2(transform.position.x - (speed * Time.deltaTime), transform.position.y);
+        }
+        
         if (Input.GetKey("d") == true) // move right 
         {
+            transform.localScale = new Vector3(1, 1, 1);
             anim.SetBool("player run", true);
             print("player pressed right");
             transform.position = new Vector2(transform.position.x + (speed * Time.deltaTime), transform.position.y);
