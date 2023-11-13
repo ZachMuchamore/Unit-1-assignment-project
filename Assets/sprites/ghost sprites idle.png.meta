@@ -236,10 +236,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      ghost sprites idle_0: -6516752609944910371
-      ghost sprites idle_1: 4818660671355320946
-      ghost sprites idle_2: 8210897545343486309
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
