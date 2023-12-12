@@ -30,7 +30,7 @@ public class NewBehaviourScript : MonoBehaviour
             print("player is sprinting");
             speed = speed + 2;
         }
-        if (Input.GetKey("a") == true) // move left
+        if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey("a")))
         {
             transform.localScale = new Vector3(-1, 1, 1);
             anim.SetBool("player run", true);
@@ -38,7 +38,7 @@ public class NewBehaviourScript : MonoBehaviour
             transform.position = new Vector2(transform.position.x - (speed * Time.deltaTime), transform.position.y);
         }
         
-        if (Input.GetKey("d") == true) // move right 
+        if ( (Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey("d")) )
         {
             transform.localScale = new Vector3(1, 1, 1);
             anim.SetBool("player run", true);
